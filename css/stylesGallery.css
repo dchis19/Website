@@ -1,0 +1,291 @@
+body{
+  background: -moz-linear-gradient(45deg, #C5C6C7  0%, rgb(140,140,140) 29%, #1F2833 66%, black 100%);
+  background: -webkit-linear-gradient(45deg, #C5C6C7  0%,rgb(140,140,140) 29%,#1F2833 66%,black 100%);
+  background: linear-gradient(45deg, #C5C6C7 0%,rgb(140,140,140) 29%,#1F2833 66%,black 100%);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  /*min-height: calc(100vh - 2rem);*/
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  position: relative; 
+}
+
+body::before, 
+
+  
+body::after {
+    width: 70vmin;
+    height: 70vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+    transform-origin: 20% 20%; 
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
+  100% {
+    border-radius: 40% 60%; } 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn); 
+  } 
+}
+  .st0{display:none;}
+  .st1{display:inline;}
+  .st2{opacity:0.29;}
+  .st3{fill:#FFFFFF;}
+  .st4{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+  .st5{clip-path:url(#SVGID_4_);}
+  .st6{clip-path:url(#SVGID_6_);}
+  .st7{clip-path:url(#SVGID_8_);}
+  .st8{clip-path:url(#SVGID_10_);}
+  .st9{fill:none;}
+  .st10{clip-path:url(#SVGID_12_);}
+  .st11{opacity:0.7;}
+  .st12{clip-path:url(#SVGID_14_);}
+  .st13{opacity:0.2;}
+  .st14{clip-path:url(#SVGID_16_);}
+  .st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+
+h1{
+  margin-top: 5.5%;
+  font-family: Times New Roman;
+  font-weight: bold;
+  text-align: center;
+  font-size: 300%;
+  color: #66FCF1;
+  background: linear-gradient(45deg, #1F2833 0%, black 50%, #1F2833 100%);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-style: solid;
+  border-color: #45A29E;
+  border-width: 5px;
+  margin-bottom: 0%;
+  border-bottom-width: 0px;
+  letter-spacing: 0.5em;
+}
+
+h2{
+  text-align: center;
+  font-size: 32pt;
+}
+
+li{
+  display: inline;
+  margin: 0px 30px;
+}
+
+a{
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 18px 5px 18px;}
+
+a: hover, a.on{
+  color:  #cc3333;
+  background-color: #ffffff;
+  }
+
+#menu{
+  width: 100%;
+  padding: .5%;
+  margin: 0% auto 0% auto;
+  border-top: 2px #000;
+  font-size: 100%;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em;
+  text-align: center;
+  overflow-wrap: normal;
+}
+
+#text{
+  background-color: rgb(200, 215, 220);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  border-color: darkslateblue;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#tableOfContents{
+  position: fixed; top: 0; left: 0; z-index: 9999; width: 100%;
+  color: whitesmoke;
+  padding-bottom: 1%;
+  font-size: 100%;
+  border-style: solid;
+  border-color: black;
+  border-bottom-width: 1%;
+  background-color: black;
+  padding-top:  1%;
+  margin-bottom: 0%;
+  font-size: 100%;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+#MarineCorps{
+  padding-bottom: 1%;
+  padding-top: 2%;
+  border-style: solid;
+  border-color: #45A29E;
+  border-width: 5px;
+  margin-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 8%;
+  text-align: justify;
+  background-color: #1F2833;
+  color: #66FCF1;
+}
+
+#vmi{
+  padding-bottom: 1%;
+  padding-top: 2%;
+  border-style: solid;
+  border-color: #45A29E;
+  border-width: 5px;
+  margin-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 8%;
+  text-align: justify;
+  background-color: #1F2833;
+  color: #66FCF1;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 9%;
+  padding-right: 15%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+#row {
+  display: flex;
+}
+
+#break{
+  padding-left: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 10px;
+  left: 17%;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: black;
+  text-align: center;
+  border-style: solid;
+  border-color: gray;
+  font-size: 100%;
+  overflow-wrap: normal;
+}
+
+/* Expanding image text */
+#imgtext1 {
+  position: absolute;
+  bottom: 10px;
+  left: 17%;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: black;
+  text-align: center;
+  border-style: solid;
+  border-color: gray;
+  font-size: 100%;
+  overflow-wrap: normal;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  padding-left: 72%;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

@@ -1,0 +1,162 @@
+<!-- Author: Daniel Chisner
+     Date: 2022 December 10 -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Gallery </title>
+    <link href="css/stylesGallery.css" type="text/css" rel="stylesheet" />
+  </head>
+
+
+<!-- Introduction about myself -->
+  <body>
+    <h1> <b> Gallery </b> </h1>
+
+    <div id = "tableOfContents">
+      <ul id = "menu">
+        <li><a href="#Marine Corps"> Marine Corps </a></li>
+        <li><a href="#Virginia Military Institute"> Virginia Military Institute </a></li>
+      </ul>
+    </div>
+
+    <div id = "MarineCorps">
+      <h2 id = "Marine Corps"> <u> Marine Corps </u> </h2>
+      <script>function expandPhoto(imgs, nums) {
+        // Get the expanded image
+        if (nums<11){
+          var expandImg = document.getElementById("expandedImg");
+          // Get the image text
+          var imgText = document.getElementById("imgtext");
+          // Use the same src in the expanded image as the image being clicked on from the grid
+          expandImg.src = imgs.src;
+          // Use the value of the alt attribute of the clickable image as text inside the expanded image
+          imgText.innerHTML = imgs.alt;
+          // Show the container element (hidden with CSS)
+          expandImg.parentElement.style.display = "block";
+        }
+        else{
+          var expandImg1 = document.getElementById("expandedImg1");
+          // Get the image text
+          var imgText1 = document.getElementById("imgtext1");
+          // Use the same src in the expanded image as the image being clicked on from the grid
+          expandImg1.src = imgs.src;
+          // Use the value of the alt attribute of the clickable image as text inside the expanded image
+          imgText1.innerHTML = imgs.alt;
+          // Show the container element (hidden with CSS)
+          expandImg1.parentElement.style.display = "block";
+        }
+      }</script>
+
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width:70%">
+
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
+
+
+      <div class="row">
+        <div class="column">
+          <img src="Images/Squad.JPEG" alt = "The Basic School Squad" onclick="expandPhoto(this, 1);" width = "214" height = "143">
+        </div>
+        <div class="column">
+          <img src="Images/MCMAP.JPEG" alt = "Training in the Marine Corps Martial Arts Program" onclick="expandPhoto(this, 2);" width = "214" height = "143">  
+        </div>
+        <div class="column">
+          <img src="Images/Range.JPEG" alt = "At the Range" onclick="expandPhoto(this, 3);" width = "214" height = "143">
+        </div>
+
+        <div class="column">
+          <img src="Images/TBSplatoon.JPEG" alt = "Platoon at The Basic School" onclick="expandPhoto(this,4);" width = "217" height = "143">
+        </div>
+
+        <div class="column">
+          <img src="Images/BirthdayBall.JPEG" alt = "2020 Marine Corps Birthday Ball" onclick="expandPhoto(this, 5);" width = "214" height = "143">  
+        </div>
+
+        <div class="column">
+          <img src="Images/Friends.JPEG" alt = "Friends at The Basic School" onclick="expandPhoto(this, 6);" width = "214" height = "143">
+        </div>
+
+        <div class="column">
+          <img src="Images/TBSHike.JPEG" alt = "15-Mile Hike" onclick="expandPhoto(this, 7);" width = "217" height = "143">      
+        </div>
+
+        <div class="column">
+          <img src="Images/Commissioning.JPEG" alt = "Commissioning Ceremony" onclick="expandPhoto(this, 8);" width = "214" height = "143">
+        </div>
+
+        <div class="column"> </br></div>
+
+        <div class="column">
+          <img src="Images/Norway.JPEG" alt = "Norway"  onclick="expandPhoto(this, 9);" width = "110" height = "143">      
+        </div>
+
+        <div class="column">
+          <img src="Images/SatComm.JPEG" alt = "Establishing Satellite Communications" onclick="expandPhoto(this, 10);" width = "130" height = "143">
+        </div>
+      </div>
+    </div>
+
+
+    <div id = "vmi">
+      <h2 id = "Virginia Military Institute"> <u> Virginia Military Institute </u> </h2>
+
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg1" style="width:70%">
+
+        <!-- Image text -->
+        <div id="imgtext1"></div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img src="Images/Bulldog.JPEG" alt = "Bulldog Platoon at VMI" onclick="expandPhoto(this, 11);" width = "214" height = "143">  
+        </div>
+
+        <div class="column">
+          <img src="Images/NROTC.JPEG" alt = "VMI NROTC Battalion" onclick="expandPhoto(this, 12);" width = "214" height = "143">
+        </div>
+
+        <div class="column">
+          <img src="Images/Parade.JPEG" alt = "VMI Parade" onclick="expandPhoto(this, 14);" width = "214" height = "143">
+        </div>
+
+        <div class="column">
+          <img src="Images/GroundFighting.JPEG" alt = "Ground Fighting" onclick="expandPhoto(this, 15);" width = "217" height = "143">      
+        </div>
+
+        <div class="column">
+          <img src="Images/WinterExercise.JPEG" alt = "Winter Field Exercise" onclick="expandPhoto(this, 16);" width = "214" height = "143">
+        </div>
+
+        <div class="column">
+          <img src="Images/AwardsWithGenPeay.JPEG" alt = "Receiving an Award From General Peay" onclick="expandPhoto(this, 17);" width = "217" height = "143">      
+        </div>
+
+        <div class="column">
+          <img src="Images/ChemistryPresentation.JPEG" alt = "Chemistry Conference Presenting My Research" onclick="expandPhoto(this,18);" width = "217" height = "143">      
+        </div>
+
+        <div class="column">
+          <div id = "row">
+          <img src="Images/March.JPEG" alt = "20 Mile March" onclick="expandPhoto(this, 19);" width = "110" height = "143">
+          <div id = "break">
+          <img src="Images/Marching.JPEG" alt = "20-Mile March" onclick="expandPhoto(this, 13);" width = "110" height = "143">  
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

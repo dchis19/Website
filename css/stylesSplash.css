@@ -1,0 +1,54 @@
+#name {
+  margin-top: 3%;
+  display: block;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  width: 100%;
+  background: linear-gradient(45deg, #1F2833 0%, black 50%, #1F2833 100%);
+  position: absolute;
+  text-align: center;
+}
+
+h1{
+  font-family: Impact, monospace;
+  margin: 0%;
+  text-align: center;
+  font-size: 500%;
+  letter-spacing: 0.5em;
+  color: #66FCF1;
+}
+
+button{
+  font-size: 200%;
+  font-family: Arial, monospace;
+  width: 40%;
+  margin-top: 35%;
+  color: #C5C6C7;
+  background-color: #010112;
+  text-align: center;
+  margin-left: 30%;
+  border-style: solid;
+  border-color: #45A29E;
+  letter-spacing: 0.15em;
+  position: absolute;
+  bottom: 35%;
+  z-index: 9999;
+}
+
+/* If it jumps from one slide to the next then refresh the page */
+html, body { 
+  margin:0; padding:0;
+  width: 100%; height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.slide{
+  margin: 0%;
+  width:  100%;
+  height: 100%;
+  background-size: cover;
+  bottom: 0;
+}
+
+/* End alternate directions */
